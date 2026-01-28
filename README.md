@@ -25,14 +25,14 @@ The Heartbeat Monitor is a shell-based self-healing monitoring system designed f
 - `logs/`: Application logs
 - `tests/`: Test scenarios and mock data
 
-##Test Scenarios
-Scenario 1: Pulse OK
+## Test Scenarios
+- Scenario 1: Pulse OK
 Create a file in tests/production_output with a recent timestamp.
 Run
 bin/heartbeat.sh
 Check logs/heartbeat.log contains "Pulse OK".
 
-Scenario 2: Pulse Missing (Heartbeat Failure)
+- Scenario 2: Pulse Missing (Heartbeat Failure)
 Clear tests/production_output or set file times to old.
 Run 
 bin/heartbeat.sh
